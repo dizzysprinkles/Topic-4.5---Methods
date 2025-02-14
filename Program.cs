@@ -4,38 +4,112 @@
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine("Press ENTER for a joke: ");
-            //Console.ReadLine();
-            //Joke(50);
+            //int eeyoreX, eeyoreY;
+            //KnockKnock();
+            //Console.WriteLine();
+            //Console.WriteLine("Where should I draw Eeyore? Give me two numbers");
+            //Console.WriteLine("First number (x location) is: ");
+            //Int32.TryParse(Console.ReadLine(), out eeyoreX);
+            //Console.WriteLine("Second number (y location) is: ");
+            //Int32.TryParse(Console.ReadLine(), out eeyoreY);
+            //DrawEeyore(eeyoreX, eeyoreY);
+            //DrawTigger();
+            DrawPooh();
+        }
 
-            int bugs;
-            Console.WriteLine("How many bugs are in your code?");
-            Int32.TryParse(Console.ReadLine(), out bugs);
-            Console.WriteLine();
-            Joke(bugs);
+        // Knock Knock Joke method
+        public static void KnockKnock()
+        {
+            Console.WriteLine("Knock, knock.");
             Console.ReadLine();
+            Thread.Sleep(1000);
+            Console.WriteLine("Kanga");
+            Console.ReadLine();
+            Thread.Sleep(1000);
+            Console.WriteLine("Actually it's kangaroo");
+            Thread.Sleep(3000);
+
         }
 
-        public static void Joke(int numBugs)
+        // ASCII Art Methods
+        public static void DrawTigger()
         {
-            Console.WriteLine(numBugs + " little bugs in the code,");
-            Thread.Sleep(500);
-            Console.WriteLine(numBugs + " little bugs.");
-            Thread.Sleep(500);
-            Console.WriteLine("Fix a bug, run it again,");
-            Thread.Sleep(500);
-            Console.WriteLine((++numBugs) + " little bugs in the code.");
+            Console.WriteLine("        __  _-==-=_,-.");
+            Console.WriteLine("        /--`' \\_@-@.--<");
+            Console.WriteLine("        `--'\\ \\   <___/.  ");
+            Console.WriteLine("            \\ \\\\   \" /  ");
+            Console.WriteLine("             >=\\_/`<");
+            Console.WriteLine("  ____       /= |  \\_|/");
+            Console.WriteLine("_'    `\\   _/=== \\___/");
+            Console.WriteLine("`___/ //\\./=/~\\====\\");
+            Console.WriteLine("    \\   // /   | ===:");
+            Console.WriteLine("     |  ._/_,__|_ ==:        __");
+            Console.WriteLine("      \\/    \\\\ \\\\`--|       / \\\\  ");
+            Console.WriteLine("       |    _     \\:       /==:-\\ ");
+            Console.WriteLine("       `.__' `-____/       |--|==:");
+            Console.WriteLine("          \\    \\ ===\\      :==:`-'");
+            Console.WriteLine("          _>    \\ ===\\    /==/");
+            Console.WriteLine("         /==\\   |  ===\\__/--/");
+            Console.WriteLine("        <=== \\  /  ====\\ \\\\/");
+            Console.WriteLine("        _`--  \\/  === \\/--'");
+            Console.WriteLine("       |       \\ ==== |");
+            Console.WriteLine("        -`------/`--' /");
+            Console.WriteLine("                \\___-'");
+            Console.WriteLine();
+            Console.WriteLine();
+
         }
 
-        public static void Joke()
+        public static void DrawEeyore(int x,int y)
         {
-            Console.WriteLine("99 little bugs in the code,");
-            Thread.Sleep(500);
-            Console.WriteLine("99 little bugs.");
-            Thread.Sleep(500);
-            Console.WriteLine("Fix a bug, run it again,");
-            Thread.Sleep(500);
-            Console.WriteLine("100 little bugs in the code.");
+            Console.SetCursorPosition(x, y);
+
+            Console.WriteLine("   /`\"'-,__");
+            Console.WriteLine("   \\/\\)`   `'-.");
+            Console.WriteLine("  // \\ .--.\\   '.");
+            Console.WriteLine(" //|-.  \\_o `-.  \\---._");
+            Console.WriteLine(" || \\_o\\  _.-.\\`'-'    `-.");
+            Console.WriteLine(" || |\\.-'`    |           `.");
+            Console.WriteLine(" || | \\  \\    |             `\\");
+            Console.WriteLine(" \\| /  \\ ,\\' /                \\");
+            Console.WriteLine("  `'    `---'                  ;");
+            Console.WriteLine("         `))          .-'      |");
+            Console.WriteLine("      .-.// .-.     .'        ,;=D");
+            Console.WriteLine("     /  // /   \\  .'          ||");
+            Console.WriteLine("   |..-' |     '-'          //");
+            Console.WriteLine("    ((    \\         .===. _,//");
+            Console.WriteLine("     '`'--`'---''',--\\_/-;-'`");
+            Console.WriteLine("                   `~/^\\`");
+            Console.WriteLine("                    '==='");
+            Console.WriteLine();
+            Console.WriteLine();
         }
+
+        public static void DrawPooh()
+        {
+            Console.WriteLine("            _     _");
+            Console.WriteLine("           /\\\\.--/\\\\");
+            Console.WriteLine("           \\_ _  \\//\\");
+            Console.WriteLine("         __/o o`     |");
+            Console.WriteLine("        (/           |");
+            Console.WriteLine("         \\__,        /");
+            Console.WriteLine("        __\\-'       /");
+            Console.WriteLine("   .-'``\\ /`\"-=.-=\"`)");
+            Console.WriteLine(" /`  _.-.'          \\");
+            Console.WriteLine(" \\_.\"   ,`-._ /    /_\\");
+            Console.WriteLine("       /     /-.._/ |");
+            Console.WriteLine("      |     /    /  |");
+            Console.WriteLine("     ,|    '.__.'   |");
+            Console.WriteLine(" _  /  \\     .-\"\".  /");
+            Console.WriteLine("/ \\/   /`-._|     |");
+            Console.WriteLine("\\  \\  /     \\     |");
+            Console.WriteLine(" \\   /       \\    |");
+            Console.WriteLine("  '-'         `.  |");
+            Console.WriteLine("           .-\"`   \\");
+            Console.WriteLine("jgs        \\__,.-'`");
+            Console.WriteLine();
+            Console.WriteLine();
+        }
+
     }
 }
