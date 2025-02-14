@@ -5,15 +5,15 @@
         static void Main(string[] args)
         {
             //int eeyoreX, eeyoreY;
-            //KnockKnock();
-            //Console.WriteLine();
+            KnockKnock();
+            Console.WriteLine();
             //Console.WriteLine("Where should I draw Eeyore? Give me two numbers");
             //Console.WriteLine("First number (x location) is: ");
             //Int32.TryParse(Console.ReadLine(), out eeyoreX);
             //Console.WriteLine("Second number (y location) is: ");
             //Int32.TryParse(Console.ReadLine(), out eeyoreY);
-            //DrawEeyore(eeyoreX, eeyoreY);
-            //DrawTigger();
+            DrawEeyore(/*eeyoreX, eeyoreY*/);
+            DrawTigger();
             DrawPooh();
         }
 
@@ -60,10 +60,9 @@
 
         }
 
-        public static void DrawEeyore(int x,int y)
+        public static void DrawEeyore(/*int x,int y*/)
         {
-            Console.SetCursorPosition(x, y);
-
+            //Console.SetCursorPosition(x, y);
             Console.WriteLine("   /`\"'-,__");
             Console.WriteLine("   \\/\\)`   `'-.");
             Console.WriteLine("  // \\ .--.\\   '.");
